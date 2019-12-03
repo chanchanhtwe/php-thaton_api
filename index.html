@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rest Api and ajax</title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <div id="showMessage" class="alert alert-success hide">
+
+    </div>
+    <div class="page-header">
+        <h2>Rest Api and ajax</h2>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+                <form id="newPostForm">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" required class="form-control"><!--jquery မွာ name ေပးစရာမလို  -->
+                    </div>
+                    <div class="form-group">
+                        <label for="content">Content</label>
+                        <textarea id="content" required class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+        </div>
+        <div class="col-sm-8">
+            <table class="table">
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Content</th>
+                    <th>Post Date</th>
+                </tr>
+                <tbody id="showData">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<script src="bootstrap/js/jQuery.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
